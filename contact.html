@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+  </head>
+  <body>
+    <h1>Thank you for your time.</h1>
+    <h1>I will be in touch with you soon.</h1>
+    <div id="contact"></div>
+    <a href="/">Back to Form</a>
+    <style>
+      body{
+        background-color: rgb(55, 55, 55);
+      }
+    </style>
+      <script>
+        const resultsList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, name) => {
+          resultsList.append(`${name}: ${value}`)
+          resultsList.append(document.createElement('br'))
+        })
+      </script>
+</body>
+</html>

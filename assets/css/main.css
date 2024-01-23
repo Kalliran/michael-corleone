@@ -2684,6 +2684,10 @@ input, select, textarea {
 			vertical-align: middle;
 		}
 
+		ul .action li a:visited{
+			text-decoration: none;
+		}
+
 		ul.actions.special {
 			-moz-justify-content: center;
 			-webkit-justify-content: center;
